@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+    <meta charset="utf-8">
+    <title>小巴真的很可爱！！！</title>
+</head>
+
+<body style="background: transparent;">
+    <div class="mdui-typo mdui-container" style="text-align: center; color: #FFFFFF;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h1>小巴真的很可爱！！！</h1>想念小巴的第<span id="count"></span>天
+        </div>
+    </div>
+    <script>
+        var now = new Date;
+        var end = new Date('2023-7-20');
+        var day = Math.ceil((end - now) / 1000 / 60 / 60 / 24);
+        document.getElementById('count').innerHTML = -day;
+    </script>
+</body>
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+<style>
+    html {
+        background-image: url('./xm.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+</style>
+
+</html>
